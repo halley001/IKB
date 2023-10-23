@@ -1,0 +1,22 @@
+/**************App*********************/
+
+html, body { height: 100%; }
+body { padding:0; margin:0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/***************Navbar *****************/
+li{
+    list-style: none;
+}
+
+.near{
+    padding-left: 10rem;
+    padding-right: 7rem;
+}
+
+/**************Footer*************/
+
+/* footer.background{
+    background-image: url('{{ assets(images/admin.png)}}');
+} */
+
+/**************** Login ****************/
