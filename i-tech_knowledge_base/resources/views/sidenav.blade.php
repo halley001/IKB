@@ -6,13 +6,14 @@
             <!-- Sidebar starts -->
             <!-- Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] -->
             <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
-            <div style="min-height: 716px" class="w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between flex">
-                <div class="px-8 pt-5">
-                    <i class="fa fa-search"></i><input type="search" class="p-5px border rounded border-transparent bg-gray-700 m-1 p-1 mb-5" placeholder="search">
-
+            <div style="position:sticky; height:100vh; top:0" class="w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between flex">
+                <div class="px-8 pt-4">
+                    <h1 class="text-gray-300 text-center" style="font-size: 3rem">IKB</h1>
+                    <hr class="text-white">
+                    <i class="fa fa-search"></i><input type="search" class="p-5px border rounded border-transparent bg-gray-700 mt-3 m-1 p-1 mb-3" placeholder="search">
                     <ul class="">
                         <li class="flex w-full justify-between text-gray-300 cursor-pointer items-center mb-6">
-                            <a href="{{ url('home') }}" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white" >
+                            <a href="{{ url('/dashboard') }}" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white" >
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z"></path>
                                     <rect x="4" y="4" width="6" height="6" rx="1"></rect>
@@ -86,16 +87,27 @@
                                 <span class="text-sm ml-2">Company policies</span>
                             </a>
                         </li>
+                        
                     </ul>
                    
+
+                    <div>
+                        
+                     </div>
+
                 </div>
 
-            
-                <script>
-                    $(document).ready(function(){ 
-                    $('#panels li').on('show.bs.collapse', function () {
-                        $('#panels li.in').collapse('hide');
-                    });
-                    });
-                </script>
+
                 
+                <div class="ps-4 mb-2">
+                    <h1 class="text-gray-300">User: {{Auth::user()->name}}</h1>
+                    <h1 class="text-gray-300">Email: {{Auth::user()->email}}</h1>
+                    <hr class="text-white mt-2">
+                    <a href="{{__('logout')}}" class="my-2 mx-1"><i class="bi bi-box-arrow-left text-gray-300"></i></a>
+                    <a href="{{__('logout')}}" class="my-2 mx-1"><i class="bi bi-code-slash text-gray-300"></i></a>
+                    <a href="{{__('logout')}}" class="my-2 mx-1"><i class="bi bi-gear text-gray-300"></i></a>
+                    <a href="{{__('logout')}}" class="my-2 mx-1"><i class="bi bi-info-circle text-gray-300"></i></a>
+                </div>
+                
+
+            </div>

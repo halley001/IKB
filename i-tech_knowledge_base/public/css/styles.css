@@ -1,3 +1,7 @@
+/* Bootstrap Icon import */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
 /**************App*********************/
 
 html, body { height: 100%; }
@@ -13,25 +17,11 @@ li{
     padding-right: 7rem;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+/**************SideNav*************/
+.sideNavLayout{
+  margin-top: 3rem;
+}
 
-/**************Footer*************/
 
 /**************** Login ****************/
 .loginbody
@@ -39,6 +29,7 @@ li{
       background-image: url("../images/cover2.png");
       background-repeat: no-repeat;
       background-size: cover;
-      height: auto;
   }
+
+  /*  */
 

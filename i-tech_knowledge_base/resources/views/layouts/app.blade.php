@@ -19,7 +19,6 @@
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
    
     <!-- Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,7 +33,7 @@
         </style>
         
   </head>
-<body @if(Request::is('login')) class="loginbody" @endif>
+<body @if(Request::is('login', '/')) class="loginbody fixed-top" @endif>
     
     <div id="app">
         <main class="">
