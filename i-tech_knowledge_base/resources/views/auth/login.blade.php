@@ -73,7 +73,7 @@
     </div>
 </div> -->
 
-<div id="main-wrapper" class="container">
+<div id="main-wrapper" class="container-flex backgroundPic">
   <div class="row pt-10 mt-10">
     <div class="col-4"></div>
     <div class="col-4">
@@ -83,10 +83,10 @@
                     <img src="{{ asset('images/itech.png')}}" alt="i-tech" hieght="70px" width="100px">
                 </div>
 
-                <form>
+                <form method="POST" action="{{ route('login')}}">@csrf
                     <div class="form-group text-white">
                         <label for="email">{{__('Email Address')}}</label>
-                        <input type="email" class="form-control mb-2 @error('email') is-invalid @enderror" id="email" placeholder="Email">
+                        <input type="email" class="form-control mb-2 @error('email') is-invalid @enderror" id="email" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                         @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="form-group mb-3 text-white">
                         <label for="password">{{__('Password')}}</label>
-                        <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password">
+                        <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" name="password" required autocomplete="current-password">
                         @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

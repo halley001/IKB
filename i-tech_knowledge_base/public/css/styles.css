@@ -34,3 +34,11 @@ li{
 /**************Footer*************/
 
 /**************** Login ****************/
+.loginbody
+  {
+      background-image: url("../images/cover2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: auto;
+  }
+

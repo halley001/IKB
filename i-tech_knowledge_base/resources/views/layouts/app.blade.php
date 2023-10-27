@@ -30,16 +30,12 @@
     <!-- other head elements -->
         @stack('styles')
         <style>
-            body
-            {
-                background-image: url("../images/cover2.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+
         </style>
         
   </head>
-<body>
+<body @if(Request::is('login')) class="loginbody" @endif>
+    
     <div id="app">
         <main class="">
             @yield('content')
