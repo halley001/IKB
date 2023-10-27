@@ -18,11 +18,12 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
-Route::middleware(['auth', 'auth.session'])->group(function () {
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
-    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'dashboard'])->name('dashboard');
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/logout', function(){
+    Auth::logout();
+    return Redirect::to('login');
+ });
 
 
 

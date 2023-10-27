@@ -6,9 +6,10 @@
             <!-- Sidebar starts -->
             <!-- Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] -->
             <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
-            <div style="min-height: 716px" class="w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between hidden sm:flex">
+            <div style="min-height: 716px" class="w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between flex">
                 <div class="px-8 pt-5">
-                    
+                    <i class="fa fa-search"></i><input type="search" class="p-5px border rounded border-transparent bg-gray-700 m-1 p-1 mb-5" placeholder="search">
+
                     <ul class="">
                         <li class="flex w-full justify-between text-gray-300 cursor-pointer items-center mb-6">
                             <a href="{{ url('home') }}" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white" >
@@ -88,4 +89,13 @@
                     </ul>
                    
                 </div>
+
+            
+                <script>
+                    $(document).ready(function(){ 
+                    $('#panels li').on('show.bs.collapse', function () {
+                        $('#panels li.in').collapse('hide');
+                    });
+                    });
+                </script>
                 
