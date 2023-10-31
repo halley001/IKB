@@ -31,5 +31,15 @@ li{
       background-size: cover;
   }
 
-  /*  */
+  /* Search Bar */
+  .searchBar
+  {
+    width: 80%;
+  }
 
+  /* Create-Post.blade.php */
+.publish
+{
+  font-size: 2.5rem;
+  padding-left: 5rem;
+}

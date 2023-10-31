@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <a routerLink="/alpha-bank">
+        <a href="/dasboard/home/alphabank">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4">
@@ -24,7 +24,7 @@
               </a>
       </div>
       <div class="col">
-        <a routerLink="/i-collect">
+        <a href="{{ url('/dashboard/home/alphaicollect')}}">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4">
@@ -41,7 +41,7 @@
               </a>
       </div>
       <div class="col">
-        <a routerLink="/alpha-admin">
+        <a href="{{ url('/dashboard/home/alphaadmin')}}">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4">
@@ -61,7 +61,7 @@
     
     <div class="row pt-4">
         <div class="col">
-          <a routerLink="/alpha-microfinance">
+          <a href="{{ url('/dashboard/home/alphamicrofinance')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -78,7 +78,7 @@
                 </a>
         </div>
         <div class="col">
-          <a routerLink="/alpha-mobile">
+          <a href="{{ url('/dashboard/home/alphamobile')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -95,7 +95,7 @@
                 </a>
         </div>
         <div class="col">
-          <a routerLink="/alpha-monetics">
+          <a href="{{ url('/dashboard/home/alphamonetics')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -115,7 +115,7 @@
     
       <div class="row pt-4">
         <div class="col">
-          <a routerLink="/alpha-report">
+          <a href="{{ url('/dashboard/home/alphareporting')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -132,7 +132,7 @@
                 </a>
         </div>
         <div class="col">
-          <a routerLink="/alpha-sms">
+          <a href="{{ url('/dashboard/home/alphasms')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -149,7 +149,7 @@
                 </a>
         </div>
         <div class="col">
-          <a routerLink="/virtual-alpha">
+          <a href="{{ url('/dashboard/home/virtualalpha')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -169,7 +169,7 @@
     
       <div class="row pt-4">
         <div class="col">
-          <a routerLink="/alpha-web">
+          <a href="{{ url('/dashboard/home/alphaweb')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -186,7 +186,7 @@
                 </a>
         </div>
         <div class="col">
-          <a routerLink="/alpha-xpress">
+          <a href="{{ url('/dashboard/home/alphaxpress')}}">
               <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
