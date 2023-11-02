@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('Title');
             $table->string('Cover-Image');
             $table->string('Category');
@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('Content Solution');
             $table->string('Media');
             $table->string('Author');
-            $table->integer('Author_id');
+            $table->bigIncrements('Author_id');
             $table->timestamps();
         });
     }

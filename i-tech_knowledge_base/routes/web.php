@@ -40,6 +40,8 @@ Route::get('/dashboard/home/alphasms', [App\Http\Controllers\AlphaController::cl
 
 // Sidenav routes
 Route::get('/dashboard/create-post', [App\Http\Controllers\CreatepostController::class, 'create'])->name('/dashboard/create-post');
+Route::post('/dashboard/publish', [App\Http\Controllers\CreatepostController::class, 'publish']);
+
 
 Route::get('/logout', function(){
     Auth::logout();

@@ -94,7 +94,7 @@
                     </div>
                     <div class="form-group mb-3 text-white">
                         <label for="password">{{__('Password')}}</label>
-                        <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" name="password" required autocomplete="current-password">
+                        <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" name="password" required autocomplete="current-password" value="{{ old('password')}}">
                         @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

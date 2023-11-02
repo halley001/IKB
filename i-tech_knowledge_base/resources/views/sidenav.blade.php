@@ -99,8 +99,8 @@
 
                 
                 <div class="ps-4 mb-2">
-                    <h1 class="text-gray-300">User: {{Auth::user()->name}}</h1>
-                    <h1 class="text-gray-300">Email: {{Auth::user()->email}}</h1>
+                    <h1 class="text-gray-300">User: {{$user->name}}</h1>
+                    <h1 class="text-gray-300">Email: {{$user->email}}</h1>
                     <hr class="text-white mt-2">
                     <a href="{{ url('logout')}}" class="my-2 mx-1"><i class="bi bi-box-arrow-left text-gray-300"></i></a>
                     <a href="{{__('logout')}}" class="my-2 mx-1"><i class="bi bi-code-slash text-gray-300"></i></a>
